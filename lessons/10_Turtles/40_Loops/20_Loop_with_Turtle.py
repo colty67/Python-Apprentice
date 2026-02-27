@@ -16,21 +16,22 @@ tina.speed(0.1)                           # Make the turtle move as fast, but no
                                    # Turn tina left by the left turn
 tina.begin_fill()
 tina.circle(100)
-tina.color("blue")
+tina.color("cyan")
 tina.end_fill()
 tina.penup()
 tina.goto(0,67)     
 tina.pendown()
 tina.begin_fill()
 tina.circle(50)
-tina.color("red")
+tina.color("cyan")
 tina.end_fill()
 tina.goto(0,80)     
 tina.pendown()
 tina.begin_fill()
 tina.circle(25)
-tina.color("black")
+tina.color("white")
 tina.end_fill()
+tina.hideturtle()
 
 
                        # Continue the last two steps three more times
