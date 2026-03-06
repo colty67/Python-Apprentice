@@ -9,30 +9,32 @@ can draw a square, pentagon, and hexagon with a single function
 import turtle                           # Tell Python we want to work with the turtle
 turtle.setup(600,600,0,0)               # Set the size of the window
 
-tina = turtle.Turtle()                  # Create a turtle named tina
+star = turtle.Turtle()                  # Create a turtle named tina
 
-tina.shape('turtle')                    # Set the shape of the turtle to a turtle
-tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
+star.shape('turtle')                    # Set the shape of the turtle to a turtle
+star.speed(0)                           # Make the turtle move as fast, but not too fast. 
 
-def draw_polygon(sides):
 
-    angle = 360/sides # Calculate angle from number of sides
+
+     # Calculate angle from number of sides
     
-    for i in range(sides):                 # Loop through the number of sides
-        tina.forward(100)                           # Move tina forward by the forward distance
-        tina.left(angle)  
-        tina.begin_fill()
-        tina.color("turquoise")                           # Turn tina left by the left turn
+    for i in range(5):                 # Loop through the number of sides
+    star.forward(100)
+    star.right(144)
+                                  # Move tina forward by the forward distance
+          
 
-draw_polygon(4)                        # Draw a square
+                                   # Turn tina left by the left turn
 
-...                                      # Move tina to another spot on the screen
-
-draw_polygon(5)                        # Draw a pentagon
+                        # Draw a square
 
 ...                                      # Move tina to another spot on the screen
 
-draw_polygon(6)          
-tina.end_fill()      # Draw a hexagon
+                        # Draw a pentagon
+
+...                                      # Move tina to another spot on the screen
+
+        
+      # Draw a hexagon
 
 turtle.exitonclick()                     # Close the window when we click on it
